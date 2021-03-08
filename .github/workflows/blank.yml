@@ -35,4 +35,5 @@ jobs:
             inlineScript: |
               Write-Output "Repo Secret Value: " + $env:REPO_SECRET |
               $env:REPO_SECRET -eq "reposecretvalue"
+            azPSVersion: '3.1.0'
       
