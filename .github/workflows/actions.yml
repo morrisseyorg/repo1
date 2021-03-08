@@ -33,6 +33,6 @@ jobs:
           Write-Host ("Repo Secret Value: " + $env:REPO_SECRET);
           Write-Host ("Test Repo Secret Value: " + ($env:REPO_SECRET -eq "reposecretvalue"));
           Write-Host ("Env Secret Value: " + $env:ENV_SECRET);
-          Write-Host ("Test Env Secret Value: " + ($env:ENV_SECRET -eq "envsecretvalue"));
+          Write-Host ("Test Env Secret Value: " + ($env:ENV_SECRET -eq "envsecretvaluedev"));
           Write-Host ("Org Secret Value: " + $env:ORG_SECRET);
           Write-Host ("Test Org Secret Value: " + ($env:ORG_SECRET -eq "myorgsecretvalue"));
