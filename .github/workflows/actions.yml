@@ -30,6 +30,6 @@ jobs:
           ENV_SECRET: ${{ secrets.MY_ENV_SECRET }}
           ORG_SECRET: ${{ secrets.MY_ORG_SECRET }}
         run: |
-          Write-Host ("Repo Secret Value: " + secrets.MY_REPO_SECRET);
-          Write-Host ("Test Value: " + (secrets.MY_REPO_SECRET -eq "reposecretvalue"));
+          Write-Host ("Repo Secret Value: " + ${{ secrets.MY_REPO_SECRET }});
+          Write-Host ("Test Value: " + (${{ secrets.MY_REPO_SECRET }} -eq "reposecretvalue"));
       
