@@ -30,6 +30,7 @@ jobs:
           ORG_SECRET: ${{ secrets.MY_ORG_SECRET }}
         run: |
           $psversiontable;
-          Write-Output "Repo Secret Value: " $env:REPO_SECRET;
-          Write-Output "Test Value: " $env:REPO_SECRET -eq "reposecretvalue";
+          Write-Output "Repo Secret Value: " + $env:REPO_SECRET;
+          $equality = $env:REPO_SECRET -eq "reposecretvalue"
+          Write-Output "Test Value: " + $equality;
       
